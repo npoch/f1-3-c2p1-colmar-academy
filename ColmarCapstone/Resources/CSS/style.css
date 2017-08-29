@@ -1,0 +1,555 @@
+/*Borders for design*/
+/*a,
+li,
+p,
+h1,
+h2,
+h3,
+h4 {
+  border: 1px red solid;
+}
+
+div {
+  border: 1px cyan solid;
+}
+*/
+/*Universal CSS for document*/
+html{
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: 'Proza Libre';
+}
+
+a{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+p{
+  font-size: 1rem;
+  font-weight: 400;
+  color: #565454;
+}
+
+h1{
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h3{
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h4{
+
+}
+
+@media only screen and (max-width: 460px) {
+  html{
+    font-size: 12px;
+  }
+}
+/*Specifics for the content of the site*/
+
+/*Header section*/
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .logo img{
+  height: 2rem;
+  width: 2rem;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+}
+nav li{
+  display: inline-block;
+  padding: 1rem 0.5rem;
+}
+nav li:last-child{
+  margin-right: 1rem;
+}
+
+.academy{
+  font-weight: 400;
+  color: #565454;
+}
+
+.header nav a{
+  color: #565454;
+  text-decoration: none;
+  border: 2px white solid;
+  border-radius: 3px;
+}
+
+.header nav a:hover{
+  border: 2px #565454 solid;
+  border-radius: 3px;
+  transition: 350ms ease-in 100ms;
+}
+
+@media only screen and (min-width: 461px){
+  .h-mobile{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 460px){
+  .header .logo{
+    display: none;
+  }
+  .header nav, li, a{
+    display: none;
+  }
+  .header{
+    height: 5.25rem;
+  }
+  .h-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+  }
+  .h-mobile img{
+    display: visible;
+  }
+}
+
+/*Jumbotron*/
+.jumbotron{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+}
+
+.container{
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.j-img{
+  width: 60%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.j-img img{
+  width: 100%;
+  height: 100%;
+  margin: 2rem 0.75rem 2rem 1.5rem;
+}
+
+.j-content{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.j-content h3, h2, .btn{
+  margin-left: 1.75rem;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+  margin-top: 2rem;
+  background-color: #0a7ecc;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover{
+  background-color: #14a1ff;
+  transition: 200ms linear 100ms;
+}
+
+.j-content h3{
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 461px){
+
+}
+
+@media only screen and (max-width: 460px){
+  .jumbotron .container{
+    flex-direction: column;
+    width: 100%;
+  }
+  .j-img{
+    width: 100%;
+  }
+
+  .j-img img{
+    margin: 0;
+  }
+
+  .j-content{
+    width: 100%;
+    margin: 1.33rem;
+  }
+
+  .j-content h2, h3{
+    margin: 1.33rem;
+  }
+  .j-content .btn{
+    margin: 0.67rem 1.33rem 2.66rem 1.33rem;
+    padding: 1rem 0;
+  }
+}
+
+/*Campus section*/
+.campus{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #cce8fc;
+}
+.campus .container{
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.camp-img{
+  width: 60%;
+  display: flex;
+  margin: 2rem 1.5rem;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.camp-img img{
+  width: 98%;
+  height: auto;
+}
+
+.camp-img h2{
+  margin-top: 2rem;
+  margin-left: 0;
+}
+
+.camp-img p{
+  margin-top: 1.5rem;
+}
+
+.quote{
+  margin-top: 2rem;
+}
+
+.side-bar-right{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.event-card{
+  display: flex;
+  flex-direction: row;
+  border: 2px #eaeaea solid;
+  border-radius: 4px;
+}
+
+.campus .side-bar-right .event-card:last-child{
+  background-color: #eaeaea;
+}
+
+.event-card-img{
+  margin: 1rem;
+  width: 35%;
+  height: auto;
+}
+
+.event-card-img img{
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+}
+
+.event-card-content{
+  display: flex;
+  width: 65%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.event-card-content h2, p, a{
+  padding: 0.25rem 0;
+}
+
+@media only screen and (min-width: 461px){
+  .mobile-img{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 460px){
+  .container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+  }
+  .side-bar-right{
+    width: 100%;
+    justify-content: flex-start;
+    padding-top: 1.33rem;
+  }
+  .camp-img{
+    display: none;
+  }
+  .event-card{
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .event-card-content{
+    width: 100%;
+    height: auto;
+  }
+  .event-card-content p{
+    margin-left: 1.33rem;
+  }
+  .event-card-content a{
+    display: inline-block;
+    margin: 0.66rem 0 2.66rem 1.33rem;
+  }
+  .event-card-img{
+    display: none;
+  }
+  .mobile-img{
+    display: visible;
+  }
+  .mobile-img img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*Courses Section*/
+.courses{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+}
+.courses .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90%;
+}
+
+.banner{
+  padding: 2rem 0 0 0;
+}
+
+.banner h2{
+  padding: 0;
+  margin: 0;
+}
+
+.grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem 3.5rem;
+  align-items: flex-start;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.course-card{
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  margin: 1rem;
+  align-items: stretch;
+  flex-grow: 2, 2, auto;
+  background-color: #cce8fc;
+}
+
+.course-card h3{
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.course-card p{
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.course-card-img img{
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 461px){
+ .mobile-grid{
+   display: none;
+ }
+}
+
+@media only screen and (max-width: 460px){
+  .grid{
+    display: none;
+  }
+  .mobile-grid{
+    width: 100%;
+  }
+  .courses .container{
+    width: 100%;
+  }
+  .mobile-grid h3{
+    padding: 1.33rem;
+    margin-right: 0.33rem 1rem 0.33rem 0;
+    background-color: #cce8fc;
+    border: 1px #cce8fc solid;
+    border-radius: 3px;
+  }
+}
+
+/*Thesis Exisbits Section*/
+.thesis{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #cce8fc;
+}
+
+.thesis .banner{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.thesis .container{
+  display: flex;
+  align-items: flex-start;
+}
+
+.thesis-vid{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: auto;
+  margin: 0 1.5rem 2rem 1.5rem;
+}
+.thesis-vid video{
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.thesis-vid h3{
+  padding-top: 1.5rem;
+}
+
+.thesis-vid p{
+  margin-top: 0.5rem;
+}
+
+.thesis-content .event-card h3, p{
+  margin-top: 0.5rem;
+}
+
+.thesis .side-bar-right .event-card:first-child{
+  background-color: #eaeaea;
+}
+
+.thesis-content{
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 461px){
+.thesis-mobile{
+  display: none;
+}
+}
+
+@media only screen and (max-width: 460px){
+.thesis .container{
+  display: none;
+}
+.thesis-mobile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+}
+
+/*Footer section*/
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #eaeaea;
+}
+
+.left-foot{
+  display: flex;
+  align-items: flex-start;
+  margin: 1rem 1.5rem 2.5rem 1.5rem;
+}
+
+.left-foot p{
+  padding: 0;
+  margin: 0;
+}
+
+.right-foot{
+  display: flex;
+  align-items: flex-start;
+  margin: 1rem 1.5rem 2.5rem 1.5rem;
+}
+
+.right-foot a{
+  display: inline-block;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+@media only screen and (min-width: 461px){
+
+}
+
+@media only screen and (max-width: 460px){
+  .left-foot{
+    margin: 1.33rem;
+  }
+  .right-foot{
+    display: none;
+  }
+}
